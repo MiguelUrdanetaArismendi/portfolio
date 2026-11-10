@@ -1,154 +1,305 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Miguel Urdaneta Arismendi · Portfolio</title>
+	<meta name="description" content="Portfolio de Miguel Urdaneta Arismendi. Analista de datos · Ingeniero en Organización Industrial.">
+	<meta name="theme-color" content="#16263B">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Miguel Urdaneta Arismendi · Portfolio">
+	<meta property="og:description" content="Analista de datos · Ingeniero en Organización Industrial.">
+	<meta property="og:url" content="https://miguelurdanetaarismendi.github.io/portfolio/">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2316263B'/%3E%3Ctext x='32' y='43' font-family='Segoe UI,Arial,sans-serif' font-size='28' font-weight='600' text-anchor='middle' fill='%23ffffff'%3EMU%3C/text%3E%3C/svg%3E">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&display=swap">
+	<style>
+		:root {
+			--marino: #16263B;
+			--azul: #5B93D1;
+			--azul-enlace: #1F5C9E;
+			--gris-azulado: #A9BACD;
+			--tinta: #212931;
+			--tinta-suave: #4A5766;
+			--linea: #DCE3EB;
+			--fondo: #FFFFFF;
+			--ancho: 68rem;
+			--margen: clamp(1.25rem, 5vw, 3rem);
+		}
 
-<html>
-	<head>
-		<title>Miguel Urdaneta Arismendi Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+		*, *::before, *::after { box-sizing: border-box; }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		html {
+			-webkit-text-size-adjust: 100%;
+			text-size-adjust: 100%;
+		}
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Miguel Urdaneta Arismendi<br />
-						Portfolio</h1>
-						<p>Ingeniero en Organización Industrial | Análisis de Datos y Mejora Continua y Mejora de Procesos y la Maximización del Rendimiento Empresarial</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+		body {
+			margin: 0;
+			background: var(--fondo);
+			color: var(--tinta);
+			font-family: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+			font-size: 1.0625rem;
+			line-height: 1.6;
+			-webkit-font-smoothing: antialiased;
+		}
 
+		::selection { background: var(--azul); color: #FFFFFF; }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">PROYECTOS</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/miguelurdaneta/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-							<li><a href="https://github.com/MiguelUrdanetaArismendi" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+		a {
+			color: var(--azul-enlace);
+			text-decoration-thickness: 1px;
+			text-underline-offset: 0.2em;
+			transition: color 0.15s ease-out;
+		}
+		a:hover { color: var(--marino); }
+		a:focus-visible {
+			outline: 2px solid var(--azul);
+			outline-offset: 3px;
+			border-radius: 2px;
+		}
 
-				<!-- Main -->
-					<div id="main">
+		h1, h2, h3 {
+			margin: 0;
+			font-weight: 600;
+			line-height: 1.2;
+			text-wrap: balance;
+		}
 
+		p { margin: 0; }
 
-						<!-- Posts -->
-							<section class="posts">
-								
-								<article>
-									<header>
-										<h2><a href="https://github.com/MiguelUrdanetaArismendi/Modelo-de-prediccion-de-churn-de-clientes">Modelo de prediccón de churn de clientes<br />
-									</header>
-									<a href="https://github.com/MiguelUrdanetaArismendi/Modelo-de-prediccion-de-churn-de-clientes" class="image fit"><img src="images/Telecom--churn.jpg" alt="" /></a>
-									<p>Desarrollo de un modelo predictivo para identificar clientes con riesgo de abandono utilizando Python y scikit-learn. Se realizó análisis exploratorio, limpieza de datos, feature engineering y entrenamiento de un modelo de clasificación (Logistic Regression).</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/MiguelUrdanetaArismendi/Modelo-de-prediccion-de-churn-de-clientes" class="button">VER PROYECTO</a></li>
-									</ul>
-								</article>
+		.contenedor {
+			width: 100%;
+			max-width: var(--ancho);
+			margin-inline: auto;
+			padding-inline: var(--margen);
+		}
 
-								<article>
-									<header>
-										<h2><a href="https://github.com/MiguelUrdanetaArismendi/Analisis-mercado-automovil-espanol">Análisis mercado automovilístico español<br />
-									</header>
-									<a href="https://github.com/MiguelUrdanetaArismendi/Analisis-mercado-automovil-espanol" class="image fit"><img src="images/mercado_auto.jpg" alt="" /></a>
-									<p>Proyecto de análisis del mercado automovilístico en España utilizando datos históricos de matriculaciones de la DGT. El análisis permite visualizar tendencias del mercado, evolución de combustibles y crecimiento de vehículos electrificados.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/MiguelUrdanetaArismendi/Analisis-mercado-automovil-espanol" class="button">VER PROYECTO</a></li>
-									</ul>
-								</article>
-								
-								<article>
-									<header>
-										<h2><a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_Excel/tree/main/p4.OSAT_sub_franchises">Dashboard de puntuación de encuestas de satisfacción al cliente en Excel<br />
-									</header>
-									<a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_Excel/tree/main/p4.OSAT_sub_franchises" class="image fit"><img src="images/sub_franchises.jpg" alt="" /></a>
-									<p>Este proyecto presenta un dashboard desarrollado en Excel, que permite visualizar el nivel de satisfacción de los clientes de distintas franquicias de venta de sándwiches, utilizando diversos criterios de evaluación.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_Excel/tree/main/p4.OSAT_sub_franchises" class="button">VER PROYECTO</a></li>
-									</ul>
-								</article>
-								
-								<article>
-									<header>
-										<h2><a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_SQL/blob/main/p3.fuentesmascotas/p3.fuentesmascotas.sql">Limpieza de base de datos en SQL<br />
-									</header>
-									<a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_SQL/blob/main/p3.fuentesmascotas/p3.fuentesmascotas.sql" class="image fit"><img src="images/fuentes_mascotas.jpeg" alt="" /></a>
-									<p>En este proyecto usamos SQL para transformar una base de datos pública del estado donde encontramos información de las fuentes de agua habilitadas para el uso de mascotas en la ciudad de Madrid.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_SQL/blob/main/p3.fuentesmascotas/p3.fuentesmascotas.sql" class="button">VER PROYECTO</a></li>
-									</ul>
-								</article>
+		.saltar {
+			position: absolute;
+			left: var(--margen);
+			top: -4rem;
+			padding: 0.5rem 0.875rem;
+			background: #FFFFFF;
+			color: var(--marino);
+			border-radius: 4px;
+			z-index: 10;
+		}
+		.saltar:focus { top: 0.75rem; }
 
-								<article>
-									<header>
-										<h2><a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_Portfolio/blob/main/p1-boardgames.sql">Exploración de datos en SQL<br />
-									</header>
-									<a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_Portfolio/blob/main/p1-boardgames.sql" class="image fit"><img src="images/juegos_de_mesa.jpg" alt="" /></a>
-									<p>En este proyecto usamos SQL para explorar datos de juegos de mesa de la página Board Game Geek.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_Portfolio/blob/main/p1-boardgames.sql" class="button">VER PROYECTO</a></li>
-									</ul>
-								</article>
+		/* Cabecera */
+		.cabecera {
+			background: var(--marino);
+			color: #FFFFFF;
+			padding-block: clamp(2.5rem, 7vw, 4.5rem);
+		}
+		.cabecera h1 {
+			font-size: clamp(2rem, 4.5vw + 0.75rem, 3.25rem);
+			letter-spacing: -0.02em;
+		}
+		.cabecera .titular {
+			margin-top: 0.75rem;
+			font-size: clamp(1.125rem, 1vw + 0.9rem, 1.375rem);
+			color: var(--gris-azulado);
+		}
+		.cabecera .regla {
+			width: 4rem;
+			height: 3px;
+			margin-bottom: 1.5rem;
+			background: var(--azul);
+		}
 
-								<article>
-									<header>
-										<h2><a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_PowerBi">Power Bi Dashboards<br />
-									</header>
-									<a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_PowerBi" class="image fit"><img src="images/power_bi.webp" alt="" /></a>
-									<p>Dashboard de proyecto sobre juegos de mesa</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_PowerBi" class="button">VER PROYECTO</a></li>
-									
-									</ul>
-								</article>
-							</section>
+		.enlaces {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.5rem 1.75rem;
+			margin: 1.75rem 0 0;
+			padding: 0;
+			list-style: none;
+		}
+		.enlaces a {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.5rem;
+			min-height: 2.75rem;
+			color: #FFFFFF;
+			font-weight: 600;
+			text-decoration-color: var(--azul);
+		}
+		.enlaces a:hover { color: var(--gris-azulado); }
+		.enlaces svg { width: 1.25rem; height: 1.25rem; fill: currentColor; flex: none; }
 
+		/* Proyectos */
+		.proyectos { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+		.proyectos h2 {
+			font-size: clamp(1.5rem, 1.5vw + 1.1rem, 2rem);
+			letter-spacing: -0.01em;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid var(--linea);
+		}
 
-				<!-- Footer -->
-						<section class="split contact">
-							<section>
-								<h3>Teléfono</h3>
-								<p><a href="#">(+34) 608 464 447</a></p>
-							</section>
-							<section>
-								<h3>Correo electrónico</h3>
-								<p><a href="#">miguelurdaneta346@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/miguelurdaneta/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-									<li><a href="https://github.com/MiguelUrdanetaArismendi" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+		.rejilla {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+			gap: clamp(2.5rem, 5vw, 3.5rem) clamp(1.5rem, 4vw, 3rem);
+			margin: 2.5rem 0 0;
+			padding: 0;
+			list-style: none;
+		}
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+		.proyecto {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+		}
+		.proyecto img {
+			display: block;
+			width: 100%;
+			height: auto;
+			aspect-ratio: 16 / 9;
+			object-fit: cover;
+			border-radius: 8px;
+			background: var(--linea);
+			order: -1;
+		}
+		.proyecto h3 {
+			margin-top: 1.25rem;
+			font-size: 1.375rem;
+		}
+		.proyecto h3 a {
+			color: var(--tinta);
+			text-decoration: none;
+		}
+		.proyecto h3 a::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+		}
+		.proyecto h3 a:focus-visible { outline: none; }
+		.proyecto:focus-within {
+			outline: 2px solid var(--azul);
+			outline-offset: 6px;
+			border-radius: 8px;
+		}
+		.proyecto p {
+			margin-top: 0.5rem;
+			color: var(--tinta-suave);
+			max-width: 65ch;
+		}
+		.proyecto .ver {
+			margin-top: 0.875rem;
+			color: var(--azul-enlace);
+			font-weight: 600;
+			text-decoration: underline;
+			text-decoration-thickness: 1px;
+			text-underline-offset: 0.2em;
+		}
+		.proyecto:hover h3 a { color: var(--azul-enlace); }
+		.proyecto:hover .ver { color: var(--marino); }
 
-			</div>
+		/* Pie */
+		.pie {
+			background: var(--marino);
+			color: var(--gris-azulado);
+			padding-block: clamp(2.5rem, 6vw, 3.5rem) 2rem;
+		}
+		.pie h2 {
+			color: #FFFFFF;
+			font-size: 1.75rem;
+		}
+		.pie .enlaces { margin-top: 1rem; }
+		.pie .copyright {
+			margin-top: 2.5rem;
+			padding-top: 1.25rem;
+			border-top: 1px solid rgba(169, 186, 205, 0.25);
+			font-size: 0.9375rem;
+		}
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		@media (prefers-reduced-motion: reduce) {
+			a { transition: none; }
+		}
+	</style>
+</head>
+<body>
 
-	</body></html>
+	<a class="saltar" href="#proyectos">Saltar a los proyectos</a>
 
+	<header class="cabecera">
+		<div class="contenedor">
+			<div class="regla"></div>
+			<h1>Miguel Urdaneta Arismendi</h1>
+			<p class="titular">Analista de datos · Ingeniero en Organización Industrial</p>
+			<ul class="enlaces">
+				<li><a href="https://www.linkedin.com/in/miguelurdaneta/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a></li>
+				<li><a href="https://github.com/MiguelUrdanetaArismendi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3z"/></svg>GitHub</a></li>
+			</ul>
+		</div>
+	</header>
 
+	<main id="proyectos" class="proyectos">
+		<div class="contenedor">
+			<h2>Proyectos</h2>
+			<ul class="rejilla">
 
+				<li class="proyecto">
+					<h3><a href="https://github.com/MiguelUrdanetaArismendi/Modelo-de-prediccion-de-churn-de-clientes">Modelo de predicción de churn de clientes</a></h3>
+					<img src="images/Telecom--churn.jpg" alt="" width="1200" height="675">
+					<p>Desarrollo de un modelo predictivo para identificar clientes con riesgo de abandono utilizando Python y scikit-learn. Se realizó análisis exploratorio, limpieza de datos, feature engineering y entrenamiento de un modelo de clasificación (Logistic Regression).</p>
+					<span class="ver" aria-hidden="true">Ver proyecto en GitHub</span>
+				</li>
 
+				<li class="proyecto">
+					<h3><a href="https://github.com/MiguelUrdanetaArismendi/Analisis-mercado-automovil-espanol">Análisis del mercado automovilístico español</a></h3>
+					<img src="images/mercado_auto.jpg" alt="" width="1600" height="1066">
+					<p>Proyecto de análisis del mercado automovilístico en España utilizando datos históricos de matriculaciones de la DGT. El análisis permite visualizar tendencias del mercado, evolución de combustibles y crecimiento de vehículos electrificados.</p>
+					<span class="ver" aria-hidden="true">Ver proyecto en GitHub</span>
+				</li>
+
+				<li class="proyecto">
+					<h3><a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_Excel/tree/main/p4.OSAT_sub_franchises">Dashboard de puntuación de encuestas de satisfacción al cliente en Excel</a></h3>
+					<img src="images/sub_franchises.jpg" alt="" width="1792" height="1024" loading="lazy">
+					<p>Este proyecto presenta un dashboard desarrollado en Excel, que permite visualizar el nivel de satisfacción de los clientes de distintas franquicias de venta de sándwiches, utilizando diversos criterios de evaluación.</p>
+					<span class="ver" aria-hidden="true">Ver proyecto en GitHub</span>
+				</li>
+
+				<li class="proyecto">
+					<h3><a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_SQL/blob/main/p3.fuentesmascotas/p3.fuentesmascotas.sql">Limpieza de base de datos en SQL</a></h3>
+					<img src="images/fuentes_mascotas.jpeg" alt="" width="1750" height="1000" loading="lazy">
+					<p>En este proyecto usamos SQL para transformar una base de datos pública del estado donde encontramos información de las fuentes de agua habilitadas para el uso de mascotas en la ciudad de Madrid.</p>
+					<span class="ver" aria-hidden="true">Ver proyecto en GitHub</span>
+				</li>
+
+				<li class="proyecto">
+					<h3><a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_Portfolio/blob/main/p1-boardgames.sql">Exploración de datos en SQL</a></h3>
+					<img src="images/juegos_de_mesa.jpg" alt="" width="5472" height="3648" loading="lazy">
+					<p>En este proyecto usamos SQL para explorar datos de juegos de mesa de la página Board Game Geek.</p>
+					<span class="ver" aria-hidden="true">Ver proyecto en GitHub</span>
+				</li>
+
+				<li class="proyecto">
+					<h3><a href="https://github.com/MiguelUrdanetaArismendi/Proyectos_PowerBi">Power BI Dashboards</a></h3>
+					<img src="images/power_bi.webp" alt="" width="1407" height="605" loading="lazy">
+					<p>Dashboard de proyecto sobre juegos de mesa</p>
+					<span class="ver" aria-hidden="true">Ver proyecto en GitHub</span>
+				</li>
+
+			</ul>
+		</div>
+	</main>
+
+	<footer class="pie">
+		<div class="contenedor">
+			<h2>Contacto</h2>
+			<ul class="enlaces">
+				<li><a href="tel:+34608464447">(+34) 608 464 447</a></li>
+				<li><a href="mailto:miguelurdaneta346@gmail.com">miguelurdaneta346@gmail.com</a></li>
+				<li><a href="https://www.linkedin.com/in/miguelurdaneta/">LinkedIn</a></li>
+				<li><a href="https://github.com/MiguelUrdanetaArismendi">GitHub</a></li>
+			</ul>
+			<p class="copyright">© 2026 Miguel Urdaneta Arismendi</p>
+		</div>
+	</footer>
+
+</body>
+</html>
